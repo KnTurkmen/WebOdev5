@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Dots;
+  src: url(advanced_dot_digital-7.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.arkaplan {
+  background-image: url("./images/trafik.jpg");
+  background-size: cover;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.discerceve {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sayac-cerceve {
+  --isik-color: white;
+  font-family: Dots;
+  font-size: 30px;
+  height: 1.5em;
+  width: 3em;
+  text-shadow: 0 0 5px var(--isik-color);
+  color: var(--isik-color);
+  background-color: #060101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.traffic-isik {
+  border-radius: 70px;
+  background: #060101;
+  display: inline-flex;
+  padding: 20px 15px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+.isik-cerceve {
+  border-radius: 55px;
+  background: #2c3737;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.isik,
+.isik-p {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  opacity: 0.3;
+  background: var(--isik-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-family: Dots;
+  text-shadow: 0 0 5px var(--isik-color);
+}
+.isik-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insan-resim {
+  height: 80px;
+  width: 80px;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  height: 100%;
+}
+.btn {
+  padding: 8px 16px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.7;
+}
